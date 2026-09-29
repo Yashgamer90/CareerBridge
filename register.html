@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register | CareerBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-card"><a class="cb-brand" href="index.html"><span
+                    class="cb-logo">CB</span>CareerBridge</a><span class="hero-badge" style="margin-top:22px">CREATE
+                ACCOUNT</span>
+            <h1>Start your career journey</h1>
+            <p>Create your profile to apply for jobs and internships.</p>
+            <form id="registerForm"><label>Full Name</label><input id="regName" required
+                    placeholder="Your name"><label>Email</label><input id="regEmail" type="email" required
+                    placeholder="name@example.com"><label>Password</label><input id="regPassword" type="password"
+                    minlength="6" required placeholder="At least 6 characters"><label>Role</label><select id="regRole">
+                    <option>Student / Job Seeker</option>
+                    <option>Employer / Recruiter</option>
+                </select><button class="cb-btn cb-btn-primary" type="submit">Create Account</button></form>
+            <p class="auth-message">Already registered? <a href="login.html"
+                    style="color:#275df5;font-weight:700">Login</a></p>
+        </section>
+    </main>
+    <script src="backend.js"></script>
+</body>
+
+</html>

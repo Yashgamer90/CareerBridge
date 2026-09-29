@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jobs | CareerBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="cb-nav"><a class="cb-brand" href="index.html"><span class="cb-logo">CB</span>CareerBridge</a>
+        <div class="cb-links"><a href="student.html">Jobs</a><a href="industry.html">Companies</a><a
+                href="internship.html">Internships</a><a href="profile.html">My Profile</a></div>
+        <div class="cb-actions"><a class="cb-btn cb-btn-outline" href="login.html">Login</a><a
+                class="cb-btn cb-btn-primary" href="register.html">Register</a></div>
+    </nav>
+    <main class="cb-container">
+        <div class="cb-section-title">
+            <div><span class="hero-badge">JOB SEARCH</span>
+                <h2 style="margin-top:10px">Search jobs</h2>
+                <p>Filter by skills, location and experience — or use your saved profile skills for personalized matching.</p>
+            </div>
+            <a class="cb-btn cb-btn-outline" href="profile.html">My Smart Match</a>
+            </div>
+        </div>
+        <div class="cb-job-layout">
+            <aside class="cb-filter">
+                <h3>Filters</h3><label>Skills / title</label><input id="jobSearch"
+                    placeholder="e.g. Python"><label>Location</label><input id="jobLocation"
+                    placeholder="e.g. Indore"><label>Experience</label><select id="jobExperience">
+                    <option value="">Any</option>
+                    <option>Fresher</option>
+                    <option>0-2 years</option>
+                    <option>1-3 years</option>
+                </select><button id="jobSearchBtn" class="cb-btn cb-btn-primary"
+                    style="width:100%;margin-top:20px">Search</button>
+            </aside>
+            <section>
+                <div id="jobsList"></div>
+            </section>
+        </div>
+    </main>
+    <script src="backend.js"></script>
+    <script>const p = new URLSearchParams(location.search); jobSearch.value = p.get('q') || ''; jobLocation.value = p.get('location') || ''; jobExperience.value = p.get('experience') || '';</script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        Profile | CareerBridge
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="cb-nav">
+
+    <a
+        class="cb-brand"
+        href="index.html"
+    >
+
+        <span class="cb-logo">
+            CB
+        </span>
+
+        CareerBridge
+
+    </a>
+
+
+    <div class="cb-links">
+
+        <a href="student.html">
+            Jobs
+        </a>
+
+        <a href="industry.html">
+            Companies
+        </a>
+
+        <a href="internship.html">
+            Internships
+        </a>
+
+        <a href="profile.html">
+            My Profile
+        </a>
+
+    </div>
+
+
+    <div class="cb-actions">
+
+        <a
+            class="cb-btn cb-btn-outline"
+            href="index.html"
+        >
+            Home
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="cb-container">
+
+
+    <div class="profile-grid">
+
+
+        <!-- ================= PROFILE SIDEBAR ================= -->
+
+        <aside class="profile-card">
+
+            <div
+                class="cb-logo"
+                style="
+                    width:70px;
+                    height:70px;
+                    font-size:24px;
+                "
+            >
+                CB
+            </div>
+
+
+            <h2 data-user-name>
+                Guest
+            </h2>
+
+
+            <p>
+                Job Seeker / Student
+            </p>
+
+
+            <hr
+                style="
+                    border:0;
+                    border-top:1px solid #e5eaf2;
+                    margin:20px 0;
+                "
+            >
+
+
+            <a
+                class="cb-btn cb-btn-primary"
+                style="
+                    display:block;
+                    text-align:center;
+                "
+                href="student.html"
+            >
+                Find Jobs
+            </a>
+
+        </aside>
+
+
+
+        <!-- ================= PROFILE CONTENT ================= -->
+
+        <section>
+
+
+            <!-- PROFILE CARD -->
+
+            <div class="profile-card">
+
+                <span class="hero-badge">
+                    MY PROFILE
+                </span>
+
+
+                <h1>
+                    Career profile
+                </h1>
+
+
+                <p>
+                    Keep your profile ready
+                    before applying.
+                </p>
+
+
+                <div
+                    class="stat-grid"
+                    style="margin-top:20px"
+                >
+
+                    <div class="stat-box">
+
+                        <b id="applicationCount">
+                            0
+                        </b>
+
+                        <p>
+                            Applications
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <b>
+                            0
+                        </b>
+
+                        <p>
+                            Saved Jobs
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <b>
+                            100%
+                        </b>
+
+                        <p>
+                            Profile Goal
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SMART MATCH ================= -->
+<div class="profile-card" style="margin-top:16px">
+<span class="hero-badge">SMART CAREER MATCH</span>
+<h2 style="margin-top:10px">Find jobs that match your skills</h2>
+<p>Enter your skills separated by commas. CareerBridge will show your match percentage and skill gaps.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+<input id="profileSkills" type="text" placeholder="e.g. HTML, CSS, JavaScript, Python" style="flex:1;min-width:240px;padding:12px;border:1px solid #dbe3ef;border-radius:10px">
+<button class="cb-btn cb-btn-primary" type="button" onclick="findSmartMatches()">Analyze My Skills</button>
+</div>
+<div id="smartMatchResults" style="margin-top:18px"><div class="empty-state"><h3>Your personalized matches will appear here</h3><p>Try: HTML, CSS, JavaScript, Python</p></div></div>
+</div>
+
+<!-- ================= MY APPLICATIONS ================= -->
+
+            <div
+                class="profile-card"
+                style="margin-top:16px"
+            >
+
+                <div
+                    class="cb-section-title"
+                    style="
+                        margin-bottom:20px;
+                    "
+                >
+
+                    <div>
+
+                        <span class="hero-badge">
+                            APPLICATIONS
+                        </span>
+
+                        <h2
+                            style="
+                                margin-top:10px;
+                            "
+                        >
+                            My Applications
+                        </h2>
+
+                        <p>
+                            Jobs you have applied for.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JS WILL LOAD APPLICATIONS HERE -->
+
+                <div id="applicationsList">
+
+                    <div class="loading">
+
+                        Loading your applications...
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <div
+                class="profile-card"
+                style="margin-top:16px"
+            >
+
+                <h3>
+                    Quick actions
+                </h3>
+
+
+                <p>
+                    Browse current openings
+                    and internships.
+                </p>
+
+
+                <div
+                    style="
+                        display:flex;
+                        gap:10px;
+                        flex-wrap:wrap;
+                    "
+                >
+
+                    <a
+                        class="cb-btn cb-btn-primary"
+                        href="student.html"
+                    >
+                        Browse Jobs
+                    </a>
+
+
+                    <a
+                        class="cb-btn cb-btn-outline"
+                        href="internship.html"
+                    >
+                        Browse Internships
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="backend.js"></script>
+
+
+</body>
+
+</html>
+```

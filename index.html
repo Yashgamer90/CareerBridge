@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CareerBridge | Find Jobs & Internships</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="cb-nav"><a class="cb-brand" href="index.html"><span class="cb-logo">CB</span>CareerBridge</a>
+        <div class="cb-links"><a href="student.html">Jobs</a><a href="industry.html">Companies</a><a
+                href="internship.html">Internships</a><a href="profile.html">My Profile</a></div>
+        <div class="cb-actions"><a class="cb-btn cb-btn-outline" href="login.html">Login</a><a
+                class="cb-btn cb-btn-primary" href="register.html">Register</a></div>
+    </nav>
+    <section class="cb-hero"><span class="hero-badge">INDIA'S STUDENT-FRIENDLY CAREER PORTAL</span>
+        <h1>Find the right job. Build your career.</h1>
+        <p>Search jobs, internships and companies — then apply with your CareerBridge profile.</p>
+        <div class="cb-search"><input id="homeQ" placeholder="Search skills, job title or company"><input id="homeLoc"
+                placeholder="Location"><select id="homeExp">
+                <option value="">Experience</option>
+                <option>Fresher</option>
+                <option>0-2 years</option>
+                <option>1-3 years</option>
+            </select><button class="cb-btn cb-btn-primary"
+                onclick="location.href='student.html?q='+encodeURIComponent(homeQ.value)+'&location='+encodeURIComponent(homeLoc.value)+'&experience='+encodeURIComponent(homeExp.value)">Search</button>
+        </div>
+    </section>
+    <main class="cb-container">
+        <div class="cb-section-title">
+            <div>
+                <h2>Explore opportunities</h2>
+                <p>Popular categories for students and professionals.</p>
+            </div>
+        </div>
+        <div class="cb-chips"><a class="cb-chip" href="student.html?q=Frontend">Frontend Development</a><a
+                class="cb-chip" href="student.html?q=Python">Python Jobs</a><a class="cb-chip"
+                href="student.html?q=UI">UI/UX</a><a class="cb-chip" href="internship.html">Internships</a><a
+                class="cb-chip" href="student.html?location=Remote">Remote Jobs</a><a class="cb-chip"
+                href="student.html?experience=Fresher">Fresher Jobs</a></div>
+        <div class="cb-section-title" style="margin-top:50px">
+            <div>
+                <h2>Why CareerBridge?</h2>
+                <p>Simple tools for your first job search.</p>
+            </div>
+        </div>
+        <div class="company-grid">
+            <div class="company-card">
+                <h3>🎯 Skill Matching</h3>
+                <p>Find roles using the skills you already have.</p>
+            </div>
+            <div class="company-card">
+                <h3>📄 Easy Apply</h3>
+                <p>Keep your profile ready and submit applications quickly.</p>
+            </div>
+            <div class="company-card">
+                <h3>💻 Student First</h3>
+                <p>Discover fresher jobs and internships in one place.</p>
+            </div>
+        </div>
+        <div class="companys">
+            <h1 style="margin-top: 50px;">Featured companies actively hiring</h1>
+            <div class="container3">
+                <div class="card">
+                    <img style="width: 100px;" src="assets/compani logo/amazon.jpeg" alt="">
+                    <div>
+                        <h2>Amazon</h2>
+                        <div class="rating" style="display: flex;">
+                            <p>ratings</p><img style="width: 70px;" src="assets/svg icons/3.5 stars.png" alt="">
+                            <p>3.5 out of 5</p>
+                        </div>
+                    </div>
+                    <h4>5 lakh+ jobs available</h4>
+                    <a href="student.html?q=Amazon"><button>Apply Now</button></a>
+                </div>
+                <div class="card">
+                    <img style="width: 100px; filter: invert(1);" src="assets/compani logo/odoo_logo_inverted.png"
+                        alt="">
+                    <div>
+                        <h2>odoo</h2>
+                        <div class="rating" style="display: flex;">
+                            <p>ratings</p><img style="width: 70px;" src="assets/svg icons/3.5 stars.png" alt="">
+                            <p>3.5 out of 5</p>
+                        </div>
+                    </div>
+                    <h4>3k+ jobs available</h4>
+                    <a href="student.html?q=Odoo"><button>Apply Now</button></a>
+                </div>
+                <div class="card">
+                    <img style="width: 100px;" src="assets/compani logo/flipkart.png" alt="">
+                    <div>
+                        <h2>FlipKart</h2>
+                        <div class="rating" style="display: flex;">
+                            <p>ratings</p><img style="width: 70px;" src="assets/svg icons/3.5 stars.png" alt="">
+                            <p>3.9 out of 5</p>
+                        </div>
+                    </div>
+                    <h4>2.5lakh+ jobs available</h4>
+                    <a href="student.html?q=Flipkart"><button>Apply Now</button></a>
+                </div>
+                <div class="card">
+                    <img style="width: 100px;" src="assets/compani logo/TCS.jfif" alt="">
+                    <div>
+                        <h2>Tcs</h2>
+                        <div class="rating" style="display: flex;">
+                            <p>ratings</p><img style="width: 70px;" src="assets/svg icons/3.5 stars.png" alt="">
+                            <p>3.2 out of 5</p>
+                        </div>
+                    </div>
+                    <h4>40k+ jobs available</h4>
+                    <a href="student.html?q=Tata Consultancy Services"><button >Apply Now</button></a>
+                </div>
+
+            </div>
+              <h2>Explore more jobs & internships click on view all companies</h2>
+            <a href="industry.html"><button class="viewcompani">View All Companies</button></a>
+        </div>
+    </main>
+    <footer class="cb-footer"><strong>CareerBridge</strong> — connecting skills with opportunities.</footer>
+</body>
+
+</html>
